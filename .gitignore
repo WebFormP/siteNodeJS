@@ -1,0 +1,3 @@
+# exclure les modules npm définis dans package.json
+/node_modules/*
+package-lock.json
