@@ -31,7 +31,7 @@ router.get('/', function(requete,reponse){
 .use(function(requete, reponse, next){
   const titrePage = "Erreur 404";
   const messageErreur = "La page demandée n'existe pas";
-  reponse.status(404).render('erreur404', {msg: messageErreur, titre:titrePage});
+  reponse.status(404).render('erreur404', {msg: messageErreur, titre:titrePage, active:"erreur"});
 });
 
 
