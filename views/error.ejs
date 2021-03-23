@@ -5,5 +5,7 @@
         <section>
             <h2>Une erreur s'est produite !</h2>
             <h2><%= msg %></h2>
+            <h3><%= error.status %> : <%= message %></h3>
+            <pre><%= error.stack %></pre>
         </section>
 <%- include('footer'); -%>
